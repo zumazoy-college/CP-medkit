@@ -1,0 +1,121 @@
+.templates-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 24px;
+}
+
+.template-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.template-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.template-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.template-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+}
+
+.template-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: #f7fafc;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.btn-icon:hover {
+  background: #edf2f7;
+  transform: scale(1.1);
+}
+
+.template-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.template-section {
+  font-size: 15px;
+  color: #2d3748;
+  line-height: 1.7;
+}
+
+.template-section strong {
+  color: #4a5568;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.selected-diagnoses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.diagnosis-tag {
+  padding: 10px;
+  background: #edf2f7;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-badge {
+  padding: 2px 8px;
+  background: #3182ce;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.remove-diagnosis {
+  padding: 4px 8px;
+  fontSize: 12px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-diagnosis:hover {
+  background: #dc2626;
+}

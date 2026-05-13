@@ -1,0 +1,157 @@
+.reviews-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.rating-summary {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+}
+
+.rating-score {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe8cc 100%);
+  border-radius: 16px;
+}
+
+.score-number {
+  font-size: 72px;
+  font-weight: 800;
+  color: #f39c12;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.score-stars {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.score-total {
+  font-size: 15px;
+  color: #718096;
+  font-weight: 600;
+}
+
+.rating-distribution {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.distribution-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stars-label {
+  font-size: 15px;
+  color: #2d3748;
+  min-width: 60px;
+  font-weight: 600;
+}
+
+.distribution-bar {
+  flex: 1;
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.distribution-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f39c12 0%, #f1c40f 100%);
+  transition: width 0.5s ease;
+  border-radius: 6px;
+}
+
+.stars-count {
+  font-size: 15px;
+  color: #718096;
+  min-width: 40px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.review-patient {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 6px;
+}
+
+.review-date {
+  font-size: 14px;
+  color: #718096;
+  font-weight: 500;
+}
+
+.review-rating {
+  font-size: 22px;
+}
+
+.review-comment {
+  font-size: 16px;
+  color: #2d3748;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.btn-report {
+  background: white;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-report:hover {
+  background: #e74c3c;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}

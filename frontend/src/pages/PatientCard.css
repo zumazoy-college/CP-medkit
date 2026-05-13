@@ -1,0 +1,435 @@
+.appointment-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appointment-header {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patient-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient-details h1 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: #2d3748;
+}
+
+.patient-meta {
+  display: flex;
+  gap: 15px;
+  color: #718096;
+  font-size: 14px;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.timer {
+  padding: 8px 16px;
+  background: #edf2f7;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+.tabs {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 20px;
+}
+
+.tab-button {
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #718096;
+  transition: all 0.2s;
+}
+
+.tab-button.active {
+  color: #3182ce;
+  border-bottom-color: #3182ce;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-item {
+  padding: 15px;
+  background: #f7fafc;
+  border-radius: 6px;
+  border-left: 3px solid #3182ce;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.history-date {
+  color: #2d3748;
+}
+
+.history-doctor {
+  color: #718096;
+  font-size: 14px;
+}
+
+.history-diagnosis {
+  margin: 8px 0;
+  color: #2d3748;
+}
+
+.history-prescriptions {
+  margin: 8px 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.examination-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-section h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2d3748;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  min-height: 100px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+.form-group textarea:disabled {
+  background: #f7fafc;
+  color: #718096;
+}
+
+.diagnosis-search {
+  position: relative;
+}
+
+.diagnosis-search input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.diagnosis-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.diagnosis-result-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.diagnosis-result-item:hover {
+  background: #f7fafc;
+}
+
+.selected-diagnoses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.diagnosis-tag {
+  padding: 10px;
+  background: #edf2f7;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-badge {
+  padding: 2px 8px;
+  background: #3182ce;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.prescriptions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prescription-item-display {
+  padding: 12px;
+  background: #f7fafc;
+  border-radius: 6px;
+}
+
+.prescription-item-display .instructions {
+  margin-top: 5px;
+  color: #718096;
+  font-size: 14px;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.file-item {
+  padding: 10px;
+  background: #f7fafc;
+  border-radius: 6px;
+}
+
+.file-upload {
+  margin-top: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.templates-button {
+  padding: 10px 20px;
+  background: #edf2f7;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.templates-button:hover {
+  background: #e2e8f0;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #3182ce;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2c5aa0;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #2d3748;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e0;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #3182ce;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #718096;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.templates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.template-item {
+  padding: 15px;
+  background: #f7fafc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.template-item:hover {
+  background: #edf2f7;
+}
+
+.template-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.template-preview {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.search-loading {
+  padding: 12px;
+  text-align: center;
+  color: #718096;
+}
+
+.prescription-form {
+  padding: 15px;
+  background: #f7fafc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.prescription-form .form-group input,
+.prescription-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.prescription-form .form-group input:focus,
+.prescription-form .form-group textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+}

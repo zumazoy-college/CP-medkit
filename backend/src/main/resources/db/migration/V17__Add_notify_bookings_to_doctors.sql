@@ -1,0 +1,1 @@
+ALTER TABLE doctors ADD COLUMN notify_bookings BOOLEAN NOT NULL DEFAULT true;
